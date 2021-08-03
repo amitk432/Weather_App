@@ -6,18 +6,21 @@ export default class Weather extends Component {
         super();
         this.state = {
             weather: "",
-            location: "Delhi"
+            location: "",
         };
     }
 
     HandleButtonClick = () => {
-        axios.get("/weather").then(response => {
+        axios
+        .get("/weather").then(response => {
             this.setState({
-                weather: response.data.temperature + " ℃"
+                weather: response.data.temperature + " ℃",
+                location: response.data.region, 
             });
         });
-    };
 
+    };
+  
     render() {
         return (
             <div>

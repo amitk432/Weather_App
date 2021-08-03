@@ -1,0 +1,41 @@
+{
+    "request": {
+        "type": "City",
+        "query": "Delhi, India",
+        "language": "en",
+        "unit": "m"
+    },
+    "location": {
+        "name": "Delhi",
+        "country": "India",
+        "region": "Delhi",
+        "lat": "28.667",
+        "lon": "77.217",
+        "timezone_id": "Asia\/Kolkata",
+        "localtime": "2021-08-02 21:13",
+        "localtime_epoch": 1627938780,
+        "utc_offset": "5.50"
+    },
+    "current": {
+        "observation_time": "03:43 PM",
+        "temperature": 28,
+        "weather_code": 143,
+        "weather_icons": [
+            "https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0006_mist.png"
+        ],
+        "weather_descriptions": [
+            "Mist"
+        ],
+        "wind_speed": 7,
+        "wind_degree": 50,
+        "wind_dir": "NE",
+        "pressure": 1000,
+        "precip": 0.7,
+        "humidity": 100,
+        "cloudcover": 75,
+        "feelslike": 30,
+        "uv_index": 7,
+        "visibility": 3,
+        "is_day": "no"
+    }
+}

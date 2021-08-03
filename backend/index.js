@@ -16,7 +16,8 @@ app.get('/weather', (req, res) => {
             if (!error && response.statusCode == 200) {
                 var parsedBody = JSON.parse(body);
                 var temperature = parsedBody["current"]["temperature"];
-                res.send({ temperature });
+                var region = parsedBody["location"]["region"];
+                res.send({ temperature, region });
             }
         }
     );
